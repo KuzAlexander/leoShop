@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="jquery-3.6.0.js"></script>    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Leo Shop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header header__container">
+            <div class="header__top">
+                <div class="header__wrap wrap">
+                    <section class="header__form form">
+                        <form class="form__txt" action=""> Language:
+                            <select class="form__option" name="Language" id="">
+                                <option value="">English</option>
+                                <option value="">Russian</option>
+                                <option value="">Deutsche</option>
+                            </select>
+                        </form>
+                        <form class="form__txt" action=""> Currency:
+                            <select class="form__option" name="Currency" id="">
+                                <option value="">USD</option>
+                                <option value="">RUB</option>
+                            </select>
+                        </form>                            
+                    </section>
+                    <section class="header__link link">
+                        <a class="link__txt" href="#">Account </a> <span class="link__shape">|</span>
+                        <a class="link__txt" href="#">Wishlist </a><span class="link__shape">|</span>
+                        <a class="link__txt" href="#">Checkout </a> <span class="link__shape">|</span>
+                        <a class="link__txt" href="#">Log In </a> <span class="link__shape">|</span>
+                        <a class="link__txt" href="#">Sign Up </a>
+                    </section>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__content wrap">
+                    <a href="#" class="header__logo logo">Leo Shop</a>
+                    <div class="header__burger burger">
+                        <div class="burger__linet"></div>
+                        <div class="burger__linem"></div>
+                        <div class="burger__lineb"></div>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="menu">
+                            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">women</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">men</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">other</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">purchase</a></li>
+                        </ul>                     
+                    </nav>
+                    <div class="header__right">
+                        <form class="search" action="">
+                            <div class="search__wrap">
+                                <input class="search__input" type="text" placeholder="Search..">
+                                <a href="#"><img class="search__img"src="images/Search.png" alt=""></a>                          
+                            </div>
+                        </form>
+                        <div class="header__icon">
+                            <a href="#" class="icon">
+                                <img class="icon__tag" src="images/icon1.png" alt="">
+                            </a>               
+                            <a href="#" class="icon">
+                                <img class="icon__basket" src="images/icon2.png" alt="">
+                            </a>
+                        </div>    
+                        <p class="cart">cart(0)</p>                         
+                    </div>  
+                </div>
+            </div>
+        </header>  
+        <div class="banner banner__container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(images/Layer.png);">
+                        <div class="carousel-caption">
+                            <p class="banner__title">ALUMINUM CLUB</p> <br>
+                            <p class="banner__subtitle">Experience Ray-Ban</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/Layer.png);">
+                        <div class="carousel-caption">
+                            <p class="banner__title">ALUMINUM CLUB</p> <br>
+                            <p class="banner__subtitle">Experience Ray-Ban</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/Layer.png);">
+                        <div class="carousel-caption">
+                            <p class="banner__title">ALUMINUM CLUB</p> <br>
+                            <p class="banner__subtitle">Experience Ray-Ban</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> 
+        <main>
+            <div class="wrap">
+                <div class="products">
+                    <div class="products__category">
+                        <section class="products__section">
+                            <h2 class="products__title">Featured Products</h2>
+                            <div class="products__items">
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/glasses1.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                        <span class="card__price">$388.00</span></p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>                          
+                                    </div>
+                                    <div class="new">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 15.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$90.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new none">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 16.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$300.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new none">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 17.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$180.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new none">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 18.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$278.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 19.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$378.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new none">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 20.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$500.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 21.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$200.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new none">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 22.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$370.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section class="products__section">
+                            <p class="products__title">Staff pick</p>
+                            <div class="products__items">
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 25.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$378.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 24.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$278.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new none">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 23.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$188.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section class="products__section">
+                            <p class="products__title">New Products</p>
+                            <div class="products__items">
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 28.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$90.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 26.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$60.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new none">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                                <article class="products__card card">
+                                    <div class="card__pic">
+                                        <img src="images/Layer 27.png" alt="">
+                                    </div>
+                                    <div class="card__description">
+                                        <p class="card__title">Lorem Ipsum is simply. <br>
+                                            <span class="card__price">$378.00</span>
+                                        </p>
+                                        <a href="#" class="icon icon--rad">
+                                            <img class="icon__basket" src="images/Layer_backet.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new">
+                                        <p class="new__txt">new</p>
+                                    </div>
+                                    <div class="sale none">
+                                        <p class="sale__txt">sale</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="products__sidebar sidebar">        
+                        <article class="sidebar__slider slider">
+                            <h2 class="slider__title">Featured Glass</h2>
+                            <div class="slider__bg">
+                                <a class="slider__link" href="#">Check it Out</a>
+                            </div>    
+                            <ul class="slider__dots dots">
+                                <li class="dots__item dots__item--activ"></li>
+                                <li class="dots__item"></li>
+                                <li class="dots__item"></li>
+                            </ul> 
+                        </article>
+                    
+                        <article class="sidebar__input input">
+                            <h2 class="input__title">newsletters signup</h2>
+                            <p class="input__subtitle">Lorem ipsum dolor sit amen, <br> dolor imun ra adlip</p>
+                            <form action="">
+                                <input class="input__area" type="textaria">
+                                <input class="input__button" type="submit" value="Subscribe">
+                            </form>
+                        </article>
+                    </aside>
+                </div>                   
+            </div> 
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__wrap wrap">
+                    <section class="footer__connection connection">
+                        <a href="#" class="icon icon--white">
+                            <img class="icon__tag" src="images/auto.png" alt="">
+                        </a>
+                        <p class="connection__title">Free shipping on orders over $100</p>
+                    </section>
+                    <section class="footer__connection connection">
+                        <a href="#" class="icon icon--white">
+                            <img class="icon__tag" src="images/tel.png" alt="">
+                        </a>
+                        <p class="connection__title">call us! toLl free- 409-8888-0099</p>
+                    </section>
+                </div>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__content wrap">
+                    <section class="footer__section facebook">
+                        <h2 class="facebook__title">facebook</h2>
+                        <p class="facebook__subtitle">20000 Members</p>
+                        <form action="">
+                            <input type="image" src="images/Layer 33.png">
+                        </form>
+                        <div class="facebook__photo">
+                            <img class="facebook__img" src="images/Layer 36.png" alt=""> 
+                            <img class="facebook__img" src="images/Layer 37.png" alt="">
+                            <img class="facebook__img" src="images/Layer 38.png" alt="">
+                            <img class="facebook__img" src="images/Layer 39.png" alt="">
+                            <img class="facebook__img" src="images/Layer 39 copy.png" alt="">
+                            <img class="facebook__img" src="images/Layer 38 copy.png" alt="">
+                            <img class="facebook__img" src="images/Layer 37 copy.png" alt="">
+                            <img class="facebook__img" src="images/Layer 36 copy.png" alt="">
+                        </div>
+                        <p class="facebook__subtitle">facebook Social plugin</p>
+                    </section>
+                    <section class="footer__section twitter">
+                        <h2 class="twitter__title">From twitter</h2>
+                        <article class="twitter__post">
+                            <a href="#" class="icon icon--twit">
+                                <img class="icon__tag" src="images/twit.png" alt="">
+                            </a>
+                            <p class="twitter__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                        </article>
+                        <article class="twitter__post">
+                            <a href="#" class="icon icon--twit">
+                                <img class="icon__tag" src="images/twit.png" alt="">
+                            </a>
+                            <p class="twitter__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                        </article>
+                    </section>
+                    <section class="footer__section information">
+                        <h2 class="information__title">information</h2>
+                        <ul class="information__menu">
+                            <li class="information__item">Sed ultrices purus non.</li>
+                            <li class="information__item">sodales sodales.</li>
+                            <li class="information__item">Curabitur pretium dui vitae.</li>
+                            <li class="information__item">Donec gravida mi in nisl</li>
+                            <li class="information__item">faucibus leo condimentum.</li>
+                            <li class="information__item">Donec et lorem suscipit.</li>
+                        </ul>
+                    </section>
+                    <section class="footer__section contact">
+                        <h2 class="contact__title">Contact Us</h2>
+                        <p  class="contact__subtitle">Leo Store <br>
+                        Leopards media<br>
+                        KVM Rpad, 4590GH<br>
+                        +1 489-8888-0099<br>
+                        mail@email.com</p>
+                        <div class="contact__icon">
+                            <a href="#" class="icon icon--cont">
+                                <img class="icon__tag" src="images/1.png" alt="">
+                            </a>
+                            <a href="#" class="icon icon--cont">
+                                <img class="icon__tag" src="images/2.png" alt="">
+                            </a>
+                            <a href="#" class="icon icon--cont">
+                                <img class="icon__tag" src="images/3.png" alt="">
+                            </a>
+                            <a href="#" class="icon icon--cont">
+                                <img class="icon__tag" src="images/4.png" alt="">
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__container wrap">
+                    <section class="footer__copyright">
+                        <p class="copyright">© Copyright 2013 Css Author, All Rights Reserved.</p>
+                    </section>
+                    <section class="footer__link link">
+                        <a class="link__txt link__txt--footer" href="#">Account </a> <span class="link__shape link__shape--footer">|</span>
+                        <a class="link__txt link__txt--footer" href="#">Wishlist </a><span class="link__shape link__shape--footer">|</span>
+                        <a class="link__txt link__txt--footer" href="#">Checkout </a> <span class="link__shape link__shape--footer">|</span>
+                        <a class="link__txt link__txt--footer" href="#">Log In </a> <span class="link__shape link__shape--footer">|</span>
+                        <a class="link__txt link__txt--footer" href="#">Sign Up </a>
+                    </section>
+                </div>
+            </div>
+        </footer> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>    
+</body>
+</html>

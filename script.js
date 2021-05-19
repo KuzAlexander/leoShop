@@ -1,0 +1,9 @@
+jQuery(document).ready(function($){
+    $('.burger').click(function(){
+        $('.burger__linet').toggleClass('activ__linet')
+        $('.burger__linem').toggleClass('activ__linem')
+        $('.burger__lineb').toggleClass('activ__lineb')
+        $('.menu').toggleClass('activ__menu')
+        $('body').toggleClass('activ__body')
+    })
+})

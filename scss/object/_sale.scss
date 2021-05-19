@@ -1,0 +1,19 @@
+.sale{
+    position: absolute;
+    top: -23px;
+    left: -48px;
+    width: 130px;
+    height: 40px;
+    z-index: 2;
+    border: 40px solid transparent;
+    border-bottom: 40px solid #7db122;
+    transform: rotate(-45deg); 
+    &__txt{
+        position: relative;
+        top: 14px;
+        left: 8px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 14px;            
+    }
+}

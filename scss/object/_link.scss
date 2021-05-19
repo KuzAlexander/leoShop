@@ -1,0 +1,24 @@
+.link {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      &__txt {
+            text-decoration: none;
+            font-weight: 400;
+            color: #ffffff;
+            padding: 0 15px;
+            &:last-child {
+                  padding-right: 0px;
+            }
+            &--footer {
+                  color: #8adcf0;
+            }            
+      }
+      &__shape {
+            color: #ffffff;
+            &--footer {
+            color: #8adcf0;
+      }
+      }
+
+} 

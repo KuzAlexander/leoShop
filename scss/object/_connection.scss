@@ -1,0 +1,12 @@
+.connection {
+    display: flex;
+    align-items: center;
+    &__title {
+        margin: 0 30px 0 20px;
+        font-size: 21px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: "Open Sans";
+    }    
+}

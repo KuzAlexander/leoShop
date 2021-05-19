@@ -1,0 +1,39 @@
+.products {
+	display: flex;
+	justify-content: flex-start;		
+		&__category {
+			margin: 0 -19px
+		}
+		&__section {
+			padding: 0 14px;
+		}
+		&__title {
+			margin: 50px 0 20px 0;
+			padding-left: 5px;
+			font-size: 24px;
+			text-transform: uppercase;
+			letter-spacing: 0px;
+			color: #635f57;
+			font-weight: 400;
+			font-family: "Open Sans";
+		}
+
+		&__items {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;	
+		}
+		&__card {
+			margin-bottom: 25px;
+			margin: 0 5px 25px
+		}
+		&__sidebar{
+			flex-shrink: 0;
+			margin-left: 28px;
+		}
+		&__input {
+			text-align: center;
+		}
+}
+
+

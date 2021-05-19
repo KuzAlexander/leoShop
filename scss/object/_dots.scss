@@ -1,0 +1,14 @@
+.dots{
+	width: 50px;
+	display: flex;
+	justify-content: space-between;
+	&__item{
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #7db122;		
+		&--activ{
+			background-color: #4cb1ca;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.new{
+    position: absolute;
+    top: -23px;
+    left: 145px;
+    width: 130px;
+    height: 40px;
+    z-index: 2;
+    border: 40px solid transparent;
+    border-bottom: 40px solid #4cb1ca;
+    transform: rotate(45deg); 
+    &__txt{
+        position: relative;
+        top: 16px;
+        left: 11px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 14px;            
+    }
+}

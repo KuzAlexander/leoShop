@@ -1,0 +1,49 @@
+.footer {
+    &__top {
+        background-color: #4cb1ca;
+    }
+    &__connection {
+        padding: 15px 0;
+    }        
+    
+    &__middle {
+        overflow: hidden;
+        background-color: #39a0b9;
+    }      
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin: 45px auto 55px auto;
+    }
+    &__section {
+        flex-shrink: 0;
+        padding: 0 5px;
+    }
+
+    &__bottom {
+        background-color: #0b4b5a;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    } 
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;        
+    }  
+    &__copyright {
+        margin: 25px 0;
+    }             
+    &__link {
+        margin: 25px 0;
+    }
+}
+
+
+
+
+
+
+
+

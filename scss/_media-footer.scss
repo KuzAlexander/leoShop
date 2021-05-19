@@ -1,0 +1,36 @@
+@media(max-width: 950px){
+    .footer {	
+        &__content {
+            margin: 0px auto 15px auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        } 
+    
+        &__section {
+            margin-top: 20px;
+        }
+    }    
+}
+
+
+
+@media(max-width: 790px){
+    .footer {	
+        &__wrap{
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        &__container {
+            justify-content: center;
+        }        
+        &__copyright {
+            text-align: center;
+            margin: 10px 0;
+        } 
+        &__link {
+            margin: 10px 0;
+            justify-content: center; 
+        }
+    } 
+     
+}

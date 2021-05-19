@@ -1,0 +1,42 @@
+@media(max-width: 1030px){
+    .products {	
+        &__items {
+            justify-content: space-around;	
+		}
+    }
+}
+@media(max-width: 790px){
+    .products {	
+        justify-content: space-around;
+        &__category{
+            flex-basis: 40%;
+        }  
+        &__sidebar{
+            margin-left: 5px;
+        } 	
+    }
+}
+
+@media(max-width: 485px){
+    .products {	
+        flex-wrap: wrap;
+        &__category {
+			margin: 0;
+		}
+        &__section {
+            padding: 0;
+        }
+        &__card {
+			margin-bottom: 25px;
+			margin: 0 0px 15px
+		}
+		&__sidebar{
+			margin-left: 0px;
+		}        
+    }
+    .input{
+	&__button{
+		margin-bottom: 15px;
+	}	
+}
+}

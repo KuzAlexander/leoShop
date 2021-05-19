@@ -1,0 +1,138 @@
+@media(max-width: 900px){
+    .header{
+        &__logo{
+            flex-basis: 30%;
+            margin-bottom: 10px;
+        }
+        &__menu{
+            flex-basis: 70%;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        &__right{
+            flex-basis: 100%;
+            justify-content: center;
+        }
+    }
+}
+@media(max-width: 768px){
+    .wrapper{
+        overflow: hidden;
+    }
+    .header{
+        &__container{
+            position: fixed;
+            z-index: 3;
+        }
+        &__top {
+            position: relative;
+            z-index: 4;
+        }
+        &__form{
+            flex-basis: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        &__link{
+            flex-basis: 100%;
+            justify-content: center;         
+        }
+
+        &__bottom{
+            position: relative;
+            z-index: 3;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__logo{
+            flex-basis: 70%;
+            margin-bottom: 0;
+            padding: 10px 0;
+            text-align: left;
+            background-color: white;
+            position: relative;
+            z-index: 3;
+        }
+        &__burger{
+            display: block;
+            position: relative;
+            z-index: 3;
+        }
+        &__menu{
+            margin-bottom: 0;
+        }
+        &__right{
+            display: none;
+            flex-basis: 100%;
+            justify-content: center;
+        }
+    }
+    .menu{
+        display: none;
+        &__item{
+            padding: 10px 0;
+        }
+        &__link{
+            font-size: 25px;
+        }
+    } 
+    .banner{
+        &__container{
+            margin-top: 132px;
+        }
+    }   
+}
+@media(max-width: 400px){
+    .header{
+        &__form{
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    }
+    .form {
+        &__txt {
+            padding-right: 0px;
+        }
+    }
+    .link {
+        &__txt {
+            padding-bottom: 10px;
+        }        
+    }
+}
+
+.activ{
+    &__body{
+        overflow: hidden;
+    }
+    &__linet{
+        transition: all 0.3s ease;
+        transform: rotate(45deg);
+        position: relative;
+        top: 14px;
+    }
+    &__linem{
+        transform: scale(0);
+    }
+    &__lineb{
+        transition: all 0.3s ease;
+        transform: rotate(-45deg);
+        position: relative;
+        top: -10px;
+    }  
+    &__menu{
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        left: 0;        
+        width: 100%;
+        height: 100%;
+        padding: 180px 20px 0;
+        flex-direction: column;
+        background-color: white;
+        overflow: auto;
+        display: block;
+        z-index: 1;
+    }      
+} 
